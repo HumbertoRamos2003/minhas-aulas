@@ -1,0 +1,146 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cabecalho"
+        "principal"
+        "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #2f4f4f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.95);
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+.cabecalho > h2 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: #d2cfcf;
+    /*padding: 20px;*/
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #2f4f4f;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: 1.2rem;
+    padding-right: 20px;
+    color: #ffffff;
+    position: sticky;
+    bottom: 0px;
+}
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: 32%;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.modulo > h3 {
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #003a6c;
+}
+
+.modulo > ul {
+    margin: 0%;
+    padding: 10px;
+    list-style: none;
+}
+
+.modulo > ul > li {
+    padding: 7px;
+    font-size: 1.1rem;
+    cursor: pointer;   
+}
+
+.modulo > ul > li > a {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+}
+
+.modulo > ul > li:hover{
+    background-color: #b2b2b2;
+}
+
+.modulo.roxo { border: 2px solid #8a2be2; }
+.modulo.roxo > h3 { background-color: #8a2be2; }
+
+.modulo.azul { border: 2px solid #1e90ff; }
+.modulo.azul > h3 { background-color: #1e90ff; }
+
+.modulo.verde { border: 2px solid #00ff7f; }
+.modulo.verde > h3 { background-color: #00ff7f; }
+
+.modulo.lima { border: 2px solid #00ff00; }
+.modulo.lima > h3 { background-color: #00ff00; }
+
+.modulo.vermelho { border: 2px solid #ff0000; }
+.modulo.vermelho > h3 { background-color: #ff0000; }
+
+.modulo.laranja { border: 2px solid #ff4500; }
+.modulo.laranja > h3 { background-color: #ff4500; }
+
+.modulo.amarelo { border: 2px solid #ffff00; }
+.modulo.amarelo > h3 { background-color: #ffff00; }
+
+.modulo.DarkCyan { border: 2px solid #008b8b; }
+.modulo.DarkCyan > h3 { background-color: #008b8b; }
+
+.modulo.poma { border: 2px solid #dda0dd; }
+.modulo.poma > h3 { background-color: #dda0dd; }
+
+.modulo.rosa { border: 2px solid #ff69b4; }
+.modulo.rosa > h3 { background-color: #ff69b4; }
+
+.modulo.golb { border: 2px solid #cbb26a; }
+.modulo.golb > h3 { background-color: #cbb26a; }
